@@ -1,14 +1,13 @@
-Упражнение 1
-Файлова система в UNIX/Linux
-В най-простата си форма, файловата система е набор от файлове, съхранени върху запомнящо устройство.
-В UNIX/Linux файловете биват обикновени и специални (директории, връзки, двоични, символни и т.н.). Т.е. директориите също са файлове. Те могат да съдържат файлове, в частност - други директории. По този начин се изгражда йерархична структура на файловата система, която визуално може да бъде представена като дърво.
+File system in UNIX/Linux
+In its simplest form, a file system is a set of files, stored in a memory based device.
+In UNIX/Linux files are regular or special (directories, links, binary, symbolic etc.). In other words, directories are also files. They can contain files, in particular - other directories. This is how a hierarchical structure of the file system, that can be visually represented as a tree, is built.
 
 
-Корена на това дърво се нарича главна (коренна) директория и се бележи с наклонена черта (/).
-Всеки файл има име (уникално в рамките на съдържащата го директория), размер (брой байтове), собственик (потребителя който го е създал), група (групата на собственика), дата на създаване, права на достъп и др.
-Името на файла може да се състои от произволни символи (без /), но е препоръчително да се използват само букви, цифри и някои препинателни знаци без специално значение (например _, ., -). UNIX/Linux прави разлика между малки и главни букви, както в имената на файловете, така и при командите и навсякъде другаде.
-В UNIX/Linux не съществува понятие разширение на файл. Името на файла може да завършва на .txt, .doc, .c и др., но това не е разширение, а част от името на файла и операционната система по никакъв начин не се интересува от него. Но някои приложения (например компилатора на C) имат изискване името на файла да завършва по определен начин.
-Директорията в която се намира потребителя, се нарича текуща (работна) директория. Първоначално това е неговата собствена потребителска директория, която се нарича HOME.
-Файловете в текущата директория са достъпни само по име, но файлове от други директории са достъпни само чрез използване на пълно име.
-Пълното име на файл е списък от имена на директории през които се преминава, за да се достигне до файла, разделени с наклонена черта (/). Пълното име може да се зададе спрямо главната директория - нарича се абсолютно пълно име и започва с наклонена черта (/), а може да бъде зададено и спрямо текущата директория – нарича се относително пълно име.
-Всяка директория съдържа 2 специални директории: текуща директория - означава се с точка (.); родителска директория - означава се с две точки (..).
+The root of this tree is called head (root) directory and is represented by a forward slash (/).
+Each file has a name (unique within its directory), size (bytes number), owner (the user, who created it), a group (the owner's group), date of creation, access rights and so on.
+The file name can contain arbitrary symbols (without /), but it's prefferable to only contain letters, digits and some punctuation marks without special meaning (like _, ., -). UNIX/Linux distinguishes uppercase and lowercase letters, both in file names and in commands, as well as everywhere else.
+In UNIX/Linux, the term "file extention" doesn't exist. The file name can end in .txt, .doc, .c and so on, but that's not an extention, it's a part of the file's name and the operating system is in no way interrested in it. Some apps, however (like the C compiler), require the file's name to end a certain way.
+The directory the user is currently in is called a current (working) directory. Initially it's their own personal user directory, called HOME.
+Files in the current directory are available by name, but files in other directories are only available via using their full name.
+A file's full name is a list of the names of the directories needed to go through, to reach the file, separated by forward slash (/). The full name can be set based on the main directory - it's called an absolute full name and starts with a forward slash (/), and it can also be set based on the current directory - it's called a relative full name.
+Each directory contains 2 special directories: the current directory - it's represented by a dot (.); parent directory - it's represented by 2 dots (..).
