@@ -1,5 +1,4 @@
-Упражнение 9 - задачи
-Да се състави командна процедура, която реализира командата ps -u списък_имена_на_потребители - извежда информация за процесите, стартирани от съответните потребители.
-Да се състави командна процедура, която изпраща сигнал на (убива) всички процеси, свързани с терминал, които са работили активно повече от 1 секунда
-Да се състави командна процедура, която реализира командата ps -u списък_номера_на_потребители - извежда информация за процесите, стартирани от съответните потребители.
-Да се състави командна процедура, която реализира командата finger - подобна на who, но вместо терминал, извежда името на потребителя.
+Write a command procedure, that implements the ps -u list_of_users_names command - it gives information about processes, staretd by given users.
+Write a command procedure, that sends a lignal to (kills) all processes, linked to a terminal, that have worked actively for more than a second.
+Write a command procedure, that implements the ps -u list_of_users_ids command - it gives information about processes, started by given users.
+Write a command procedure, that implements the finger command - similar to who, but instead of terminal, it shows the user's name.
