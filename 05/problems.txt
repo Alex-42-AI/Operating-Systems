@@ -1,7 +1,5 @@
-Упражнение 5 - задачи
-Да се напише командна процедура, която:
-
-(LOGINFO) Да се състави командна процедура, която извежда на станадртния изход подходящо оформени текущата дата, информация за стартираните сесии и приветствие. (Процедурата е с оглед включване в профайл)
-(EXCHAN_NAMES) Разменя имената на два съществуващи обикновени файла, подадени като параметри в командния ред при стартиране.
-Получава като параметър на командния ред име на потребител и извежда на стандартния изход колко пъти този потребител е логически включен в системата.
-Получава като параметри на командния ред име на съществуващ текстов файл и 2 числа m и n (m<n). Извежда на стандартния изход m на брой реда от файла с номера от n-m+1 до n, сортирани в обратен азбучен ред.
+Write a command procedure, that:
+(LOGINFO) prints out properly formatted the current date, information on started sessions and a greeting.
+(EXCHAN_NAMES) Switches the names of 2 existing regular files, passed as parameters at the command line.
+Receives a user's name as a parameter at the command line and prints out how many times this user is logged in the system.
+Receives a name of an existing text file and 2 numbers m < n as parameters at the command line. It prints out the file's lines, numbered n - m + 1 to n, sorted in reversed alphabetical order.
