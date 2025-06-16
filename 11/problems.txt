@@ -1,3 +1,2 @@
-Упражнение 11 - задачи
-Да се напише програма на C, която реализира командата cp файл1 файл2
-Да се напише програма на C, която реализира командата wc файл
+Write a C program, that implements the cp file1 file2 command.
+Write a C program, that  implements the wc file command.
