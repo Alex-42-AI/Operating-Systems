@@ -1,9 +1,6 @@
-Упражнение 12 - задачи
-Да се напише програма на C, която реализира командата cat (без параметри)
-Да се напише програма на C, която реализира командата tee файл
-Да се напише програма на C, която реализира командата cat >>файл
-Да се напише програма на C, която реализира командата cat [файл] [...]
-Да се напише програма на C, която реализира командата cut -cm-n файл
-(m и n да се четат от входа)
-(*)Да се напише програма на C, която реализира командата fgrep -q текст файл
-(приема се, че редовете са до 80 символа)
+Write a C program, that implements the cat command (without parameters).
+Write a C program, that implements the tee file command.
+Write a C program, that implements the cat >> file command.
+Write a C program, that implements the cat [file] [...] command.
+Write a C program, that implements the cut -cm-m file command (m and n are read from the input).
+(*) Write a C program, that implements the fgrep -q text file command (assume the lines are up to 80 symbols).
