@@ -1,5 +1,4 @@
-Упражнение 7 - задачи
-Включете в профайла си процедурата LOGINFO
-Да се състави командна процедура, която получава при стартиране в командния ред две числа. Изважда по-малкото от по-голямото и извежда резултата на стандартния изход.
-Да се състави командна процедура, която получава при стартиране в командния ред две числа. Извежда на стандартния изход последователност от всички цели числа между тях.
-(NAME_CUT) Да се състави командна процедура, която получава при стартиране в командния ред един параметър – име на съществуваща директория. За всеки файл от тази директория, съдържащ програма (код) на С, процедурата стартира компилация във фонов режим, задавайки за име на получавания при успешна компилация изпълним файл основното име на текстовия файл и разширение exe.
+Run the LOGINFO procedure in your profile
+Write a command procedure, that receives 2 numbers passed as parameters at the command line. It subtracts the lesser one from the greater one and prints out the result.
+Write a command procedure, that receives 2 numbers passed as parameters at the command line. It prints out a sequence of all integers between them.
+(NAME_CUT) Write a command procedure, that receives the name of an existing directory as a parameter at the command line. For each file in it, that contains C code, the procedure starts compilation in background mode, setting the main name of the text file with a .exe extention as a name of the executable file, that appears as a result of a successful compilation.
