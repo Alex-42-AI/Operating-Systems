@@ -1,5 +1,4 @@
-Упражнение 13 - задачи
-Да се напише програма на C, която извежда номера на процеса и номера на родителя му. Сменя образа му с UNIX команда (например ps) и извежда резултата от exec().
-Да се напише програма на C, която извежда номера на процеса и номера на родителя му. Поражда процес наследник. Във всеки от процесите извежда резултата от fork(), номера на процеса и номера на родителя му.
-Да се напише програма на C, която извежда номера на процеса и номера на родителя му. Поражда процес наследник. Във всеки от процесите извежда резултата от fork(), номера на процеса и номера на родителя му. В родителя изчаква наследника да приключи и извежда номера му и кода на завършване.
-Да се напише програма на C, която извежда номера на процеса и номера на родителя му. Поражда процес наследник. Във всеки от процесите извежда резултата от fork(), номера на процеса и номера на родителя му. Сменя образа на наследника с UNIX команда. В родителя изчаква наследника да приключи и извежда номера му и кода на завършване.
+Write a C program, that prints out the pid and the parent pid. It changes its image with a UNIX command (like ps) and prints out the exec() result.
+Write a C program, that prints out the pid and the parent pid. It starts a descendant process. In each process it prints out the fork() result, the pid and the parent pid.
+Write a C program, that prints out the pid and the parent pid. It starts a descendant process. In each process it prints out the fork() result, the pid and the parent pid. In the parent it waits for the descendant to finish and prints out its pid and its exit code.
+Write a C program, that prints out the pid and the parent pid. It starts a descendant process. In each process it prints out the fork() result, the pid and the parent pid. It changes its image with a UNIX command. In the parent it waits for the descendant to finish and prints out its pid and its exit code.
