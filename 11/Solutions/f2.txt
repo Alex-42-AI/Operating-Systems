@@ -1,0 +1,3 @@
+alpha betta
+gamma   delta
+echo
