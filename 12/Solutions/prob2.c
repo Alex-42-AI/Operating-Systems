@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
     if (argc != 2)
         return 1;
-    int fd = open(argv[1], O_CREAT | O_WRONLY | O_TRUNC, 0777);
+    int fd = open(argv[1], O_CREAT | O_WRONLY | O_TRUNC, 0644);
     if (fd == -1) {
         perror(argv[1]);
         return 1;
@@ -21,3 +21,4 @@ int main(int argc, char *argv[]) {
     close(fd);
     return 0;
 }
+
