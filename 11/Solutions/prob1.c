@@ -8,8 +8,10 @@ int main(int argc, char *argv[]) {
         if (fd0 == -1)
                 return 1;
         int fd1 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0777);
-        if (fd1 == -1)
+        if (fd1 == -1) {
+                close(fd0);
                 return 1;
+       }
         while (1) {
                 char buf[1];
                 int r = read(fd0, buf, 1);
