@@ -3,13 +3,12 @@
 #include<sys/wait.h>
 #include<stdio.h>
 #include<fcntl.h>
-#include<stdlib.h>
 int main(int argc, char* argv[]) {
         if (argc < 3)
                 return 1;
         int f = fork();
         if (f == -1)
-                exit(1);
+                return 1;
         if (!f) {
                 int i;
                 for (i = 1; i < argc; i++)
