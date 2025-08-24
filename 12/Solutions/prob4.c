@@ -4,6 +4,8 @@ int main(int argc, char *argv[]) {
         int i;
         for (i = 1; i < argc; i++) {
                 int fd = open(argv[i], O_RDONLY);
+                if (fd == -1)
+                        continue;
                 while (1) {
                         char buf[1];
                         int r = read(fd, buf, 1);
