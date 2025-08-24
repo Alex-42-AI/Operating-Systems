@@ -1,8 +1,7 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<sys/wait.h>
 int main(int argc, char *argv[]) {
         if (argc != 3)
                 return 1;
@@ -17,9 +16,8 @@ int main(int argc, char *argv[]) {
                         if (f0 == -1)
                                 return 1;
                         if (!f0) {
-                                int e = execlp(argv[2], argv[2], NULL);
-                                perror("execlp command2");
-                                return e;
+                                execlp(argv[2], argv[2], NULL);
+                                return 1;
                         }
                         int status1;
                         wait(&status1);
@@ -31,7 +29,6 @@ int main(int argc, char *argv[]) {
                         return WEXITSTATUS(status0);
                 return 1;
         }
-        int e = execlp(argv[1], argv[1], NULL);
-        perror("execlp command1");
-        return e;
+        execlp(argv[1], argv[1], NULL);
+        return 1;
 }
